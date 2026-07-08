@@ -1,6 +1,8 @@
-venv/
+.venv/
 __pycache__/
 .DS_Store
 *.pkl
 *.npz
 data_processed_PlantVillage
+results/
+*.pyc
