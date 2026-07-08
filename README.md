@@ -26,19 +26,24 @@ This project extracts deep-learning features from leaf images using **EfficientN
 ├── requirements.txt           # Python dependencies
 └── results/                   # (Ignored by Git) Folder containing trained .pkl and .npz models
 
+---
 
+## ⚙️ Step-by-Step Instructions to Run This Project
 
-### ⚙️ Step-by-Step Instructions to Run This Project
+Follow these exact terminal commands to run the project on your local machine.
 
-If you are an interviewer or a developer testing this app, follow these exact terminal commands to run the project on your local machine.
-
-### Step 1: Download the Code
-Open your terminal and clone this repository to your computer:
+### Step 1: Clone the repo
 ```bash
-git clone [https://github.com/Japneet-Kaur-Chawla/Leaf-Disease-Detector.git](https://github.com/Japneet-Kaur-Chawla/Leaf-Disease-Detector.git)
+git clone https://github.com/Japneet-Kaur-Chawla/Leaf-Disease-Detector.git
+cd Leaf-Disease-Detector/code
+```
 
-### Step 2: Install dependencies
+### Step 2: Set up environment and download the library packages
 ```bash
+python -m venv venv
+source venv/bin/activate      # Mac/Linux
+venv\Scripts\activate         # Windows
+
 pip install -r requirements.txt
 ```
 
@@ -46,20 +51,12 @@ pip install -r requirements.txt
 ```bash
 python download_models.py
 ```
-This downloads 4 files into a `results/` folder:
-- `PlantVillage_selected_rf.pkl`
-- `PlantVillage_selected_svm.pkl`
-- `PlantVillage_ga_mask.npz`
-- `PlantVillage_features_train.npz`
-
-Alternatively, download them manually from [this Google Drive folder](YOUR_LINK_HERE) and place them in a `results/` folder in the project root.
 
 ### Step 4: Run the app
 ```bash
 streamlit run app.py
 ```
-This opens the app in your browser at `http://localhost:8501`. Upload a leaf image and click **Predict**.
 
----
-
-
+### Step 5: Test it
+Sample leaf images are included in the `sample_images/` folder — 
+upload any of them through the sidebar to see a prediction, or use your own.
