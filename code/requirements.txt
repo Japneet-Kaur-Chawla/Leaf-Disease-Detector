@@ -1,7 +1,9 @@
-numpy
-pandas
-scikit-learn
+streamlit
 torch
 torchvision
-pillow 
-tqdm
+numpy
+pandas
+pillow
+scikit-learn
+joblib
+gdown
