@@ -42,7 +42,7 @@ def extract_and_split_dataset(dataset_folder, out_dir):
     X_val, X_test, y_val, y_test = train_test_split(X_temp, y_temp, test_size=0.666, stratify=y_temp, random_state=42)
 
     def copy_images(filepaths, labels, split):
-        split_folder = os.path.join(out_dir, split)
+        split_folder = os.path.join(out_dir, split) 
         os.makedirs(split_folder, exist_ok=True)
         for filepath, label in zip(filepaths, labels):
             label_folder = os.path.join(split_folder, label)

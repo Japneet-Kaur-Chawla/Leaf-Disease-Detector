@@ -58,7 +58,6 @@ class PlantImageDataset(Dataset):
 
 
 def extract_features(data_dir, out_file, batch=32):
-
     try:
         torch.use_deterministic_algorithms(True)
     except Exception:

@@ -17,14 +17,15 @@ This project extracts deep-learning features from leaf images using **EfficientN
 ## 📂 Project Structure
 
 ```text
-├── app.py                     # Streamlit frontend application
-├── main.py                    # Main pipeline script (trains the models)
-├── preprocessing.py           # Handles dataset splitting (train/val/test)
-├── feature_extraction.py      # PyTorch EfficientNet feature extraction
-├── ga_feature_selection.py    # Genetic Algorithm for feature optimization
-├── mlmodel_training.py        # RF and SVM training & cross-validation scripts
-├── requirements.txt           # Python dependencies
-└── results/                   # (Ignored by Git) Folder containing trained .pkl and .npz models
+|--- app.py                     # Streamlit frontend application
+|--- main.py                    # Main pipeline script (trains the models)
+|--- preprocessing.py           # Handles dataset splitting (train/val/test)
+|--- feature_extraction.py      # PyTorch EfficientNet feature extraction
+|--- ga_feature_selection.py    # Genetic Algorithm for feature optimization
+|--- mlmodel_training.py        # RF and SVM training & cross-validation scripts
+|--- requirements.txt           # Python dependencies
+|--- feature_extraction.py      # Used to download trained models from google drive link to run app.py
+└── results/                    # (Ignored by Git) Folder containing trained .pkl and .npz models
 ```
 
 ---
